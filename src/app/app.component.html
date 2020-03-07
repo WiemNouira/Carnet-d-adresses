@@ -1,0 +1,41 @@
+<div class="bg">
+
+  <h4 class="pt-5 pb-5 ">My Address Book</h4>
+
+  <div class="container rounded-top rounded-lg ">
+  
+    <div class="header-search mt-5 p-5">
+      <div class="text-center my-auto px-auto">
+          <input class="w-50 p-5"[(ngModel)]="searchText" (keyup)="filterTableau()" placeholder="  SEARCH"  style="height: 50px;">
+      </div>
+    </div>
+<div class="text-center pt-5 p-5" >
+    <span class="p-1">A</span>
+    <span class="p-1">B</span><span class="p-1">C</span><span class="p-1">D</span><span class="p-1">E</span><span class="p-1">F</span><span class="p-1">G</span><span class="p-1">H</span>
+    <span class="p-1">I</span><span class="p-1">J</span><span class="p-1">K</span><span class="p-1">L</span><span class="p-1">M</span><span class="p-1">N</span><span class="p-1">O</span><span class="p-1">P</span>
+    <span class="p-1">Q</span><span class="p-1">R</span><span class="p-1">S</span><span class="p-1">T</span><span class="p-1">U</span><span class="p-1">V</span><span class="p-1">W</span><span class="p-1">X</span><span class="p-1">Y</span><span class="p-1">Z</span>
+  </div>
+  <div >
+    <div class="row pt-4">
+      <div class="col-xs-12 col-sm-4" *ngFor="let personne of filterTab">
+        <div class="panel panel-primary">
+          <div class="panel-body">
+            <div class="row pt-4">
+              <div class="col-sm ">
+                <img  src="../assets/icons/profile.png" class="rounded-circle border border-danger">
+              </div>
+              <div class="col-sm">
+                <div> {{ personne.name }}
+                </div>
+                <div>
+                  {{ personne.phone }}
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

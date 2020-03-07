@@ -1,0 +1,52 @@
+
+@font-face {
+    font-family: 'brandon_grotesquebold';
+    src: url('./assets/fonts/brandon_bld-webfont.woff2') format('woff2'),
+         url('./assets/fonts/brandon_bld-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;	
+}
+
+h4 {
+font-family:brandon_grotesquebold, sans-serif;
+font-size:3em;
+text-align: center;
+color:white;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("./assets/img/background.jpg");
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+ .container{
+  
+  background-color: #fafafa;
+  border-style:
+	
+}
+ 
+.panel { 
+  
+  background-color: #ffffff;
+	border-style: none;
+  
+}
+
+.container input[type=text] {
+  float: center;
+  border: none;
+  font-size: 17px;
+  
+}
+
+.container span{
+  color:#ff0000;
+  font-size: 25px;
+  font-weight: bold;
+}

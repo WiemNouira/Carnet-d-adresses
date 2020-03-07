@@ -1,0 +1,26 @@
+
+
+@font-face {
+    font-family: 'brandon_grotesquebold';
+    src: url('../assets/fonts/brandon_bld-webfont.woff2') format('woff2'),
+         url('../assets/fonts/brandon_bld-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+h4 {
+font-family:brandon_grotesquebold, sans-serif;
+font-size:3em;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("../assets/background.jpg");
+
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
